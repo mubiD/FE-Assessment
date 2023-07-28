@@ -1,0 +1,90 @@
+<!-- NavBar -->
+
+<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid m-2">
+    <a class="navbar-brand" href="#">
+      <img
+        src="assets/BMW_Black_RGB_web-optimised.svg"
+        alt="BMWLogo"
+        width="30"
+        height="30"
+        class="d-inline-block align-text-top"
+      />
+    </a>
+    <ul class="nav col-md-4 justify-content-end">
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-muted">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-muted">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-muted">About</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Carousel -->
+
+<ngb-carousel>
+  <ng-template ngbSlide *ngFor="let image of images">
+    <div class="carousel">
+      <img
+        class="img"
+        src="assets/{{ image.name }}"
+        [alt]="image.imageDescription"
+      />
+    </div>
+  </ng-template>
+</ngb-carousel>
+
+<!-- Jumbotron -->
+
+<div class="jumbotron jumbotron-fluid mt-4">
+  <div class="container">
+    <h1 class="display-4">BMW M4, GT4</h1>
+    <p class="lead">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dignissimos
+      eaque architecto tenetur, soluta cupiditate animi? Voluptatum natus, eum,
+      delectus odio debitis omnis vitae accusamus similique aut ut odit optio.
+    </p>
+    <p class="lead">R4 390,000.</p>
+  </div>
+</div>
+
+<!-- Footer -->
+
+<div class="container">
+  <footer
+    class="d-flex flex-wrap justify-content-between align-items-center py-1 my-1 border-top"
+  >
+    <p class="col-md-4 mb-0 text-muted">
+      *BMW Select Offer from BMW Financial Service (South Africa) (Pty) Ltd., an
+      authorised Financial Services [FSP 4632] abd Registered Credit Provider
+      [NCRCP 2341]. Valid until 31 December 2022, Vehicle specifications may
+      vary. Ts & Cs apply.
+    </p>
+
+    <a
+      href="/"
+      class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
+    >
+      <svg class="bi me-2" width="40" height="32">
+        <use xlink:href="assets/BMW_Black_RGB_web-optimised"></use>
+      </svg>
+    </a>
+
+    <ul class="nav col-md-4 justify-content-end">
+      <a>
+        <img
+          src="assets/BMW_Black_RGB_web-optimised.svg"
+          alt="BMWLogo"
+          width="50"
+          height="50"
+          class="d-inline-block align-text-top"
+        />
+      </a>
+    </ul>
+  </footer>
+</div>
